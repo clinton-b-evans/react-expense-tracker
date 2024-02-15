@@ -4,9 +4,14 @@ const ListGroup = () => {
   return (
     <>
       <h1>ListGroup</h1>
+      {items.length === 0 && <p>No items to display</p>}
       <ul className="list-group">
         {items.map((item, index) => (
-          <li key={index} className="list-group-item">
+          <li
+            key={index}
+            onClick={() => console.log('Clicked on ' + item)}
+            className="list-group-item"
+          >
             {item}
           </li>
         ))}
