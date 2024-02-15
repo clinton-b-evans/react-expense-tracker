@@ -1,9 +1,10 @@
 import ListGroup from './components/ListGroup'
 
 const App = () => {
+  const items = ['USA', 'Canada', 'Germany', 'Japan', 'Australia']
   return (
     <div>
-      <ListGroup />
+      <ListGroup items={items} heading="Countries" />
     </div>
   )
 }
